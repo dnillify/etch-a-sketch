@@ -1,0 +1,57 @@
+:root {
+    --numRowsAndCols: 0;
+    --sizeSquare: 0;
+    --gridWidth: 800px;
+    --gridHeight: 800px;
+}
+
+
+body {
+    background-color: #2f3e46;
+}
+
+button {
+
+    background-color: #52796f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #84a98c;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(var(--numRowsAndCols), var(--sizeSquare));    
+    grid-template-rows: repeat(var(--numRowsAndCols), var(--sizeSquare));
+    width: var(--gridWidth);
+    height: var(--gridHeight);
+}
+
+.square {
+    border-style: solid;
+    border-width: 1px;
+    border-color:gray;
+    background-color: #cad2c5;
+}
+
+.squareFilled {
+    background-color: black;
+}
+
+#bottomMenu {
+    margin-top: 30px;
+}
+
