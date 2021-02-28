@@ -14,6 +14,7 @@ function populateGrid() {
         document.documentElement.style.setProperty("--sizeSquare", squareString);
 
         let newSquare = document.createElement("div");
+        newSquare.setAttribute("onclick", "void(0)");
         newSquare.className = "square";
         newSquare.addEventListener('mouseover', fillSquare);
         grid.appendChild(newSquare);
