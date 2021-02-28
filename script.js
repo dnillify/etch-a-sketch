@@ -17,6 +17,7 @@ function populateGrid() {
         newSquare.setAttribute("onclick", "void(0)");
         newSquare.className = "square";
         newSquare.addEventListener('mouseover', fillSquare);
+        newSquare.addEventListener('touchmove', fillSquare);
         grid.appendChild(newSquare);
     }
 }
